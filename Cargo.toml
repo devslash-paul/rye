@@ -1,0 +1,4 @@
+[package]
+name = "rye"
+version = "0.1.0"
+authors = ["Paul Thompson <paulthom12345@gmail.com>"]
