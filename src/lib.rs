@@ -1,5 +1,4 @@
 //rye.rust
-use std::boxed::Box;
 use std::net::TcpStream;
 
 pub struct IRCClient{
@@ -46,12 +45,14 @@ impl Default for IRCClient {
 
 
 #[test]
+#[should_panic]
 fn can_create_stream() {
     let mut f = IRCClient::new("http://www.google.com");
     f.connect();
 }
 
 #[test]
+#[should_panic]
 fn can_create_impl() {
     let mut f:IRCClient = IRCClient::new("swog");
 
